@@ -22,13 +22,7 @@ const corsOptions ={
 
 
 // Connecting to the database using mongoose
-const MONGO_URI = "mongodb+srv://laundryService:RGrFAtVdjsDeNIxq@mydatabase.xwidf.mongodb.net/laundryData?retryWrites=true&w=majority";
-mongoose.connect(MONGO_URI)
-    .then(()=>{console.log("Connected to database")}).catch((err)=>{
-
-    console.log(err.message);
-});
-
+//here write your mongodb connection with help of mongo atlas 
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
